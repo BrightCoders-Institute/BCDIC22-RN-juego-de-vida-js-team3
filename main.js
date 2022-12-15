@@ -8,11 +8,11 @@ let newArray
 let arrayCells
 
 const play = () => {
-    const showGame = startGame()
+    startGame()
     const numOfGens = 6
 
     for (let i = 0; i < numOfGens; i++) {
-        console.log(`Generation No.${i +1}:`)
+        console.log(`Generation No.${i + 1}:`)
         iteration(arrayCells)
         const showRes = showResult(newArray)
         console.log(showRes)
@@ -37,7 +37,7 @@ const startGame = () => {
 
 const createArrayCell = () => {
     arrayCells = new Array(rows)
-    for (i = 0; i < arrayCells.length; i++) {
+    for (let i = 0; i < arrayCells.length; i++) {
         arrayCells[i] = new Array(columns)
     }
 }
@@ -63,8 +63,8 @@ const iteration = (ParamarrayCells) => {
 }
 
 const countNeighbors = (ParamarrayCells, neighbors, x, y) => {
-    for (let i = -1; i <= 1; i++) {
-        for (let j = -1; j <= 1; j++) {
+    for (var i = -1; i <= 1; i++) {
+        for (var j = -1; j <= 1; j++) {
             try {
                 neighbors = checkIfNeighbors(ParamarrayCells[x + i][y + j], ParamarrayCells[x][y], neighbors)
             } catch (e) { }
@@ -74,8 +74,9 @@ const countNeighbors = (ParamarrayCells, neighbors, x, y) => {
 }
 
 const checkIfNeighbors = (ParamarrayCellsAround, ParamarrayCellsSimple, neighbors) => {
-    if (ParamarrayCellsAround.getLife() == 1) {
-        if (ParamarrayCellsSimple.getLife() == 1 && i == 0 && j == 0) {
+    if (ParamarrayCellsAround.getLife() === 1) {
+        if (ParamarrayCellsSimple.getLife() === 1 && i === 0 && j === 0) {
+            //empty
         } else {
             neighbors++
         }
@@ -116,21 +117,20 @@ const showResult = (array) => {
 
 const newcell = new Cell(0, 4)
 
-function getRows() {
-    return rows;
+function getRows () {
+    return rows
 }
 
 const getColumns = () => {
-    return columns;
+    return columns
 }
 
-function getTest() {
-    return newArray;
+function getTest () {
+    return newArray
 }
 
 // Start the simulation
 play()
-
 
 module.exports = {
     newcell,

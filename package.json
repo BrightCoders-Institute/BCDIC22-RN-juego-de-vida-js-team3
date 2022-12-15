@@ -4,7 +4,8 @@
   "description": "![BrightCoders Logo](img/logo.png)",
   "main": ".eslintrc.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watchAll"
   },
   "repository": {
     "type": "git",
