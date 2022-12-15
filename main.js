@@ -1,7 +1,4 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-undef */
-/* eslint-disable eqeqeq */
-const Cell = require('./classes/cell.js')
+const Cell = require('./src/classes/cell.js');
 
 const rows = 4
 const columns = 8
@@ -12,11 +9,10 @@ let arrayCells
 
 const play = () => {
     const showGame = startGame()
-    console.log(showGame)
-    const numOfGens = 5
+    const numOfGens = 6
 
     for (let i = 0; i < numOfGens; i++) {
-        console.log('Generacion:' + (i + 1))
+        console.log(`Generation No.${i +1}:`)
         iteration(arrayCells)
         const showRes = showResult(newArray)
         console.log(showRes)
@@ -66,12 +62,10 @@ const iteration = (ParamarrayCells) => {
     }
 }
 
-// eslint-disable-next-line no-unused-vars
 const countNeighbors = (ParamarrayCells, neighbors, x, y) => {
     for (let i = -1; i <= 1; i++) {
         for (let j = -1; j <= 1; j++) {
             try {
-                // eslint-disable-next-line no-undef
                 neighbors = checkIfNeighbors(ParamarrayCells[x + i][y + j], ParamarrayCells[x][y], neighbors)
             } catch (e) { }
         }
@@ -79,10 +73,8 @@ const countNeighbors = (ParamarrayCells, neighbors, x, y) => {
     return neighbors
 }
 
-// eslint-disable-next-line no-unused-vars
 const checkIfNeighbors = (ParamarrayCellsAround, ParamarrayCellsSimple, neighbors) => {
     if (ParamarrayCellsAround.getLife() == 1) {
-        // eslint-disable-next-line eqeqeq, no-empty
         if (ParamarrayCellsSimple.getLife() == 1 && i == 0 && j == 0) {
         } else {
             neighbors++
@@ -122,6 +114,28 @@ const showResult = (array) => {
     return resutNewArray
 }
 
+const newcell = new Cell(0, 4)
+
+function getRows() {
+    return rows;
+}
+
+const getColumns = () => {
+    return columns;
+}
+
+function getTest() {
+    return newArray;
+}
+
 // Start the simulation
 play()
-const newcell = new Cell(0, 4)
+
+
+module.exports = {
+    newcell,
+    getRows,
+    getTest,
+    getColumns,
+    rulesCell
+}

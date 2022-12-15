@@ -1,0 +1,30 @@
+{
+  "name": "bcdic22-rn-juego-de-vida-js-team3",
+  "version": "1.0.0",
+  "description": "![BrightCoders Logo](img/logo.png)",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrightCoders-Institute/BCDIC22-RN-juego-de-vida-js-team3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrightCoders-Institute/BCDIC22-RN-juego-de-vida-js-team3/issues"
+  },
+  "homepage": "https://github.com/BrightCoders-Institute/BCDIC22-RN-juego-de-vida-js-team3#readme",
+  "devDependencies": {
+    "eslint": "^8.29.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.6.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "jest": "^29.3.1"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
