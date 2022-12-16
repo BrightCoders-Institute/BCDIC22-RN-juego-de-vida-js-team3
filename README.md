@@ -72,6 +72,7 @@ Integrantes del equipo del proyecto:
 - [@victordoom](https://github.com/victordoom)
 
 # Insignias de evaluadores de código
-Codacy:  [![Codacy Badge](https://app.codacy.com/project/badge/Grade/c676cb5965ac4632b16bda664ad49024)](https://www.codacy.com/gh/BrightCoders-Institute/BCDIC22-RN-juego-de-vida-js-team3/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=BrightCoders-Institute/BCDIC22-RN-juego-de-vida-js-team3&amp;utm_campaign=Badge_Grade)
-
-Codecov: [![codecov](https://codecov.io/gh/BrightCoders-Institute/BCDIC22-RN-juego-de-vida-js-team3/branch/master/graph/badge.svg?token=EN4JMBPM9Z)](https://codecov.io/gh/BrightCoders-Institute/BCDIC22-RN-juego-de-vida-js-team3)
+| Analizador   | Calificación |
+| ------------- | ------------- |
+| Codacy   | [![Codacy Badge](https://app.codacy.com/project/badge/Grade/c676cb5965ac4632b16bda664ad49024)](https://www.codacy.com/gh/BrightCoders-Institute/BCDIC22-RN-juego-de-vida-js-team3/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=BrightCoders-Institute/BCDIC22-RN-juego-de-vida-js-team3&amp;utm_campaign=Badge_Grade)  |
+| Codecov | [![codecov](https://codecov.io/gh/BrightCoders-Institute/BCDIC22-RN-juego-de-vida-js-team3/branch/master/graph/badge.svg?token=EN4JMBPM9Z)](https://codecov.io/gh/BrightCoders-Institute/BCDIC22-RN-juego-de-vida-js-team3)  |
