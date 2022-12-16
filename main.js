@@ -1,4 +1,4 @@
-const Cell = require('./src/classes/cell.js');
+const Cell = require('./src/classes/cell.js')
 
 const rows = 4
 const columns = 8
