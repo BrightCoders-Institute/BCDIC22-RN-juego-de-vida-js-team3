@@ -1,6 +1,7 @@
 ![BrightCoders Logo](img/logo.png)
 
-Code analizers Evaluation:  [![Codacy Badge](https://app.codacy.com/project/badge/Grade/c676cb5965ac4632b16bda664ad49024)](https://www.codacy.com/gh/BrightCoders-Institute/BCDIC22-RN-juego-de-vida-js-team3/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=BrightCoders-Institute/BCDIC22-RN-juego-de-vida-js-team3&amp;utm_campaign=Badge_Grade)
+## Code Analizers Evaluation
+Codacy:  [![Codacy Badge](https://app.codacy.com/project/badge/Grade/c676cb5965ac4632b16bda664ad49024)](https://www.codacy.com/gh/BrightCoders-Institute/BCDIC22-RN-juego-de-vida-js-team3/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=BrightCoders-Institute/BCDIC22-RN-juego-de-vida-js-team3&amp;utm_campaign=Badge_Grade)
 
 # El Juego de la vida
 - [Ver instrucciones](./instructions.md)

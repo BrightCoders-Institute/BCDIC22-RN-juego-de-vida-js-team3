@@ -6,6 +6,7 @@ let resultArrayCell = ''
 let resutNewArray = ''
 let newArray
 let arrayCells
+let i, j
 
 const play = () => {
     startGame()
@@ -63,8 +64,8 @@ const iteration = (ParamarrayCells) => {
 }
 
 const countNeighbors = (ParamarrayCells, neighbors, x, y) => {
-    for (var i = -1; i <= 1; i++) {
-        for (var j = -1; j <= 1; j++) {
+    for (let i = -1; i <= 1; i++) {
+        for (let j = -1; j <= 1; j++) {
             try {
                 neighbors = checkIfNeighbors(ParamarrayCells[x + i][y + j], ParamarrayCells[x][y], neighbors)
             } catch (e) { }
@@ -76,7 +77,6 @@ const countNeighbors = (ParamarrayCells, neighbors, x, y) => {
 const checkIfNeighbors = (ParamarrayCellsAround, ParamarrayCellsSimple, neighbors) => {
     if (ParamarrayCellsAround.getLife() === 1) {
         if (ParamarrayCellsSimple.getLife() === 1 && i === 0 && j === 0) {
-            //empty
         } else {
             neighbors++
         }
